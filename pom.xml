@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>spt-checkstyle</artifactId>
-	<version>8.12.0</version>
+	<version>8.12.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<description>Checkstyle configuration for SPT Java Style</description>
@@ -20,7 +20,7 @@
 	<scm>
 		<url>https://github.com/spt-oss/spt-checkstyle/tree/master</url>
 		<connection>scm:git:git@github.com:spt-oss/spt-checkstyle.git</connection>
-		<tag>8.12.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<dependencies>
