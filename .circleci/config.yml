@@ -13,8 +13,6 @@ jobs:
                 path: ~/spt-checkstyle
             - run: |
                 curl -fsSL https://spt.page.link/ci-install-command-sh | bash -s -- git,mvn
-            - run: |
-                git-config-user "${GIT_USERNAME}" ${GIT_EMAIL}
             - restore_cache:
                 keys:
                     - cache-{{ .Branch }}
@@ -28,6 +26,8 @@ jobs:
                 key: cache-{{ .Branch }}
             - run: |
                 mvn-license-format
+            - run: |
+                git-config-user "${GIT_USERNAME}" ${GIT_EMAIL}
             - run: |
                 git-push-all 'Update license headers [ci skip]' || true
             - run: |
