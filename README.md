@@ -28,6 +28,11 @@
 		</configuration>
 		<dependencies>
 			<dependency>
+				<groupId>com.puppycrawl.tools</groupId>
+				<artifactId>checkstyle</artifactId>
+				<version>8.15</version>
+			</dependency>
+			<dependency>
 				<groupId>com.github.spt-oss</groupId>
 				<artifactId>spt-checkstyle</artifactId>
 				<version>8.15.0</version>
