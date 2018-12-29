@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>spt-checkstyle</artifactId>
-	<version>8.15.0</version>
+	<version>8.15.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>SPT Checkstyle</name>
@@ -21,7 +21,7 @@
 	<scm>
 		<url>https://github.com/spt-oss/spt-checkstyle/tree/master</url>
 		<connection>scm:git:git@github.com:spt-oss/spt-checkstyle.git</connection>
-		<tag>8.15.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<properties>
