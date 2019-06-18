@@ -348,6 +348,10 @@
 
 		<!-- Modifiers -->
 
+		<module name="ClassMemberImpliedModifier">
+			<property name="severity" value="ignore"/>
+		</module>
+
 		<module name="InterfaceMemberImpliedModifier">
 			<property name="severity" value="ignore"/>
 		</module>
