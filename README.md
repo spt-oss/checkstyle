@@ -12,7 +12,7 @@
 * Checkout the repository and import configuration into your IDE.
 
 	```bash
-	checkstyle/src/main/resources/checkstyle/checks.xml
+	checkstyle/src/main/resources/com/github/spt-oss/checkstyle/checks.xml
 	```
 
 ### Maven
@@ -24,7 +24,7 @@
 		<groupId>org.apache.maven.plugins</groupId>
 		<artifactId>maven-checkstyle-plugin</artifactId>
 		<configuration>
-			<configLocation>checkstyle/checks.xml</configLocation>
+			<configLocation>com/github/spt-oss/checkstyle/checks.xml</configLocation>
 		</configuration>
 		<dependencies>
 			<dependency>
