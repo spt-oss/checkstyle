@@ -5,28 +5,27 @@
 
 	<parent>
 		<groupId>com.github.spt-oss</groupId>
-		<artifactId>spt-oss-parent</artifactId>
-		<version>8.0.0</version>
+		<artifactId>oss-parent</artifactId>
+		<version>8.1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>spt-checkstyle</artifactId>
-	<version>8.21.0-SNAPSHOT</version>
+	<artifactId>checkstyle</artifactId>
+	<version>8.26.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>SPT Checkstyle</name>
-	<description>Checkstyle configuration for SPT Java Style</description>
-	<url>https://github.com/spt-oss/spt-checkstyle</url>
+	<name>Checkstyle</name>
+	<description>Checkstyle configuration for SPT Java style</description>
+	<url>https://github.com/spt-oss/checkstyle</url>
 	<inceptionYear>2018</inceptionYear>
 
 	<scm>
-		<url>https://github.com/spt-oss/spt-checkstyle/tree/master</url>
-		<connection>scm:git:git@github.com:spt-oss/spt-checkstyle.git</connection>
+		<url>https://github.com/spt-oss/checkstyle/tree/master</url>
+		<connection>scm:git:git@github.com:spt-oss/checkstyle.git</connection>
 		<tag>HEAD</tag>
 	</scm>
 
 	<properties>
-		<checkstyle.version>8.21</checkstyle.version>
-		<spring-boot.version>2.1.5.RELEASE</spring-boot.version>
+		<checkstyle.version>8.26</checkstyle.version>
 	</properties>
 
 	<dependencies>
@@ -34,12 +33,6 @@
 			<groupId>com.puppycrawl.tools</groupId>
 			<artifactId>checkstyle</artifactId>
 			<version>${checkstyle.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<version>${spring-boot.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -61,7 +54,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<configuration>
-					<configLocation>src/main/resources/spt/checkstyle/checks.xml</configLocation>
+					<configLocation>src/main/resources/checkstyle/checks.xml</configLocation>
 				</configuration>
 			</plugin>
 		</plugins>

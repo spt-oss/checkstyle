@@ -1,9 +1,9 @@
-# SPT Checkstyle
+# Checkstyle
 
-[![circleci](https://img.shields.io/badge/circleci-spt--checkstyle-brightgreen.svg)](https://circleci.com/gh/spt-oss/spt-checkstyle)
-[![maven central](https://img.shields.io/badge/maven_central-spt--checkstyle-blue.svg)](https://mvnrepository.com/artifact/com.github.spt-oss/spt-checkstyle)
+[![circleci](https://img.shields.io/badge/circleci-checkstyle-brightgreen.svg)](https://circleci.com/gh/spt-oss/checkstyle)
+[![maven central](https://img.shields.io/badge/maven_central-checkstyle-blue.svg)](https://mvnrepository.com/artifact/com.github.spt-oss/checkstyle)
 
-* Checkstyle configuration for SPT Java Style
+* Checkstyle configuration for SPT Java style
 
 ## Usage
 
@@ -12,7 +12,7 @@
 * Checkout the repository and import configuration into your IDE.
 
 	```bash
-	spt-checkstyle/src/main/resources/spt/checkstyle/checks.xml
+	checkstyle/src/main/resources/checkstyle/checks.xml
 	```
 
 ### Maven
@@ -24,7 +24,7 @@
 		<groupId>org.apache.maven.plugins</groupId>
 		<artifactId>maven-checkstyle-plugin</artifactId>
 		<configuration>
-			<configLocation>spt/checkstyle/checks.xml</configLocation>
+			<configLocation>checkstyle/checks.xml</configLocation>
 		</configuration>
 		<dependencies>
 			<dependency>
@@ -34,7 +34,7 @@
 			</dependency>
 			<dependency>
 				<groupId>com.github.spt-oss</groupId>
-				<artifactId>spt-checkstyle</artifactId>
+				<artifactId>checkstyle</artifactId>
 				<version>8.15.0</version>
 			</dependency>
 		</dependencies>
