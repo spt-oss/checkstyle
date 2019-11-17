@@ -273,7 +273,6 @@
 		<module name="JavadocBlockTagLocation"/>
 
 		<module name="JavadocMethod">
-			<property name="minLineCount" value="3"/>
 			<property name="validateThrows" value="true"/>
 		</module>
 
