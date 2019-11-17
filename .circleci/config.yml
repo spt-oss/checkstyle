@@ -34,7 +34,7 @@ jobs:
                 mvn-test
             - run: |
                 curl -fsSL https://spt.page.link/ci-install-gpg-key-sh | \
-                    bash -s -- https://spt.page.link/oss-parent-pubring-gpg-enc ${OPENSSL_PASSWORD}
+                    bash -s -- https://spt.page.link/maven-parent-pubring-gpg-enc ${OPENSSL_PASSWORD}
             - run: |
-                curl -fsSL https://spt.page.link/oss-parent-mvn-deploy-sh | \
+                curl -fsSL https://spt.page.link/maven-parent-mvn-deploy-sh | \
                     bash -s -- ${CIRCLE_BRANCH} ${GPG_PASSWORD} ${VERSION:-}
